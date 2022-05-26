@@ -1,5 +1,5 @@
 var audio = new Audio('sounds/speen.mp3');
-var audioWin = new Audio('sounds/win.wav');
+var audioWin = new Audio('sounds/win.mp3');
 var wheelClick = false;
 var winItemLength = 69;
 var winItemImg = 0;

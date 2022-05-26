@@ -1040,7 +1040,7 @@ header {
 }
 
 .win_pink {
-    background-color: #9D62CC;
+    background-color: #9D62CC !important;
 }
 
 .win_green {

@@ -83,7 +83,14 @@ function updateWheel() {
 updateWheel();
 
 $('.wheel_items').show();
-let pos = $('.wheel_wrap_item').eq(winItemLength).offset().left - $(window).width() / 2.2;
+let pos = 0;
+if ($(window).width() > 768)
+    pos = $('.wheel_wrap_item').eq(winItemLength).offset().left - $(window).width() / 2.2;
+else
+    pos = $('.wheel_wrap_item').eq(winItemLength).offset().left - $(window).width() / 3.5;
+
+console.log(pos);
+
 console.log($(window).width());
 //animate wheel
 $('.wheel_start').click(function() {
@@ -121,7 +128,7 @@ function callback() {
     $('.popup_container .win_item_img img').attr('src', winItemImg);
     $('.popup_container .win_item .win_item_type').html(winItemType);
     $('.popup_container .win_item .lvl span').html(winItemLvl);
-    $('.popup_price .win_item_type').addClass('win-pink');
+    $('.popup_price .win_item_type').addClass('win_pink');
     audio.pause();
     audio.currentTime = 0;
 }

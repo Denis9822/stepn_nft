@@ -1,4 +1,5 @@
 var audio = new Audio('sounds/speen.mp3');
+var audioWin = new Audio('sounds/win.wav');
 var wheelClick = false;
 var winItemLength = 69;
 var winItemImg = 0;
@@ -41,41 +42,46 @@ function updateWheel() {
 
     a.forEach((element, index) => {
 
-
         let imageId = getRandomInt(1, 28);
+        let persent60 = getRandomInt(1, 3);
         let shadowStyle = getRandomInt(1, 3);
         let randomPrice = getRandomInt(400, 3000);
         let randomLvl = getRandomInt(1, 30);
-        if (index < 50 && (randomPrice > 900 && randomPrice < 1300)) {
-            randomPrice = getRandomInt(5000, 10000);
-            shadowStyle = 3;
+
+        if (index != 69 && index != 72 && persent60 != 3) {
+            randomPrice = getRandomInt(10, 200);
+            $('.wheel_wrap_item').eq(index).addClass('wheel_wrap_item_code');
+            $('.wheel_wrap_item').eq(index).children('.win_item_type').hide();
+            $('.wheel_wrap_item').eq(index).children('.win_item_img').children().attr('src', 'img/code.png');
+            $('.wheel_wrap_item').eq(index).children('.lvl').children('.lvl_border').hide();
+            $('.wheel_wrap_item').eq(index).children('.lvl').children('span').html('Activation code');
+            $('.wheel_wrap_item').eq(index).children('.gift').html('START');
+            $('.wheel_wrap_item').eq(index).children('.gray_wrap').children('.price').html(randomPrice + ' USD');
+        } else {
+
+            if (index == 69) {
+                randomPrice = getRandomInt(5000, 10000);
+                shadowStyle = 3;
+                winItemLength = 69;
+            }
+            $('.wheel_wrap_item').eq(index).children().children('img').attr('src', 'img/snickers/' + imageId + '.png');
+            $('.wheel_wrap_item').eq(index).children().children('.price').html(randomPrice + " ≈ USD");
+            $('.wheel_wrap_item').eq(index).children('.lvl').children('span').html("Lv" + randomLvl);
+
+            if (shadowStyle == 1) {
+                $('.wheel_wrap_item').eq(index).children('.win_item_type').addClass('win_green');
+                $('.wheel_wrap_item').eq(index).children('.win_item_type').html('Trainer');
+            }
+            if (shadowStyle == 2) {
+                $('.wheel_wrap_item').eq(index).children('.win_item_type').addClass('win_blue');
+                $('.wheel_wrap_item').eq(index).children('.win_item_type').html('Jogger');
+            }
+            if (shadowStyle == 3) {
+                $('.wheel_wrap_item').eq(index).children('.win_item_type').addClass('win_pink');
+                $('.wheel_wrap_item').eq(index).children('.win_item_type').html('Walker');
+            }
         }
 
-
-        if (index == 69) {
-            randomPrice = getRandomInt(5000, 10000);
-            shadowStyle = 3;
-            winItemLength = 69;
-        }
-
-
-
-        $('.wheel_wrap_item').eq(index).children().children('img').attr('src', 'img/snickers/' + imageId + '.png');
-        $('.wheel_wrap_item').eq(index).children().children('.price').html(randomPrice + " ≈ USD");
-        $('.wheel_wrap_item').eq(index).children('.lvl').children('span').html("Lv" + randomLvl);
-
-        if (shadowStyle == 1) {
-            $('.wheel_wrap_item').eq(index).children('.win_item_type').addClass('win_green');
-            $('.wheel_wrap_item').eq(index).children('.win_item_type').html('Trainer');
-        }
-        if (shadowStyle == 2) {
-            $('.wheel_wrap_item').eq(index).children('.win_item_type').addClass('win_blue');
-            $('.wheel_wrap_item').eq(index).children('.win_item_type').html('Jogger');
-        }
-        if (shadowStyle == 3) {
-            $('.wheel_wrap_item').eq(index).children('.win_item_type').addClass('win_pink');
-            $('.wheel_wrap_item').eq(index).children('.win_item_type').html('Walker');
-        }
         $('.wheel_wrap').attr('style', 'display:grid');
     });
 
@@ -129,8 +135,14 @@ function callback() {
     $('.popup_container .win_item .win_item_type').html(winItemType);
     $('.popup_container .win_item .lvl span').html(winItemLvl);
     $('.popup_price .win_item_type').addClass('win_pink');
+    $('.win_item').removeClass('wheel_wrap_item_code');
     audio.pause();
     audio.currentTime = 0;
+
+    audioWin.volume = 0.08;
+    audioWin.play();
+
+    $('.pyro').show();
 }
 
 
@@ -146,6 +158,7 @@ $('.popup_close').click(function() {
 $('.popup_mask').click(function() {
     $(this).toggle();
     $(this).siblings('.popup_wrap').hide();
+    $('.pyro').hide();
 })
 
 $('.header_right_wallet').click(function() {
@@ -156,3 +169,9 @@ $('.header_right_wallet').click(function() {
 
 var h = $('body').height();
 $('.full_bg').attr('style', 'height: ' + h + 'px !important');
+
+
+
+setTimeout(() => {
+
+}, 2000)

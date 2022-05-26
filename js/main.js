@@ -1,5 +1,6 @@
 var audio = new Audio('sounds/speen.mp3');
 var audioWin = new Audio('sounds/win.mp3');
+audioWin.src = 'sounds/win.mp3';
 var wheelClick = false;
 var winItemLength = 69;
 var winItemImg = 0;
@@ -117,6 +118,7 @@ $('.wheel_start').click(function() {
         var ind = 1;
         audio.volume = 0.03;
         audio.play();
+
     }
 })
 
@@ -146,6 +148,7 @@ function callback() {
 }
 
 
+
 //modals
 var maxh = $(document).outerHeight(true);
 $('.popup_mask').attr('style', 'height: ' + maxh + 'px;');
@@ -169,9 +172,3 @@ $('.header_right_wallet').click(function() {
 
 var h = $('body').height();
 $('.full_bg').attr('style', 'height: ' + h + 'px !important');
-
-
-
-setTimeout(() => {
-
-}, 2000)

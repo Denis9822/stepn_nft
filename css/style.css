@@ -1668,10 +1668,12 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    .lvl {
+    .wheel_wrap_item_code .lvl {
         margin-top: 19px;
+        display: flex;
+        align-items: center;
     }
-    .lvl span {
+    .wheel_wrap_item_code .lvl span {
         line-height: initial;
     }
     .full_bg {

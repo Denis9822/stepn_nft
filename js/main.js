@@ -56,7 +56,7 @@ function updateWheel() {
             $('.wheel_wrap_item').eq(index).children('.win_item_img').children().attr('src', 'img/code.png');
             $('.wheel_wrap_item').eq(index).children('.lvl').children('.lvl_border').hide();
             $('.wheel_wrap_item').eq(index).children('.lvl').children('span').html('Activation code');
-            $('.wheel_wrap_item').eq(index).children('.gift').html('START');
+            $('.wheel_wrap_item').eq(index).children('.gray_wrap').children('.gift').html('START');
             $('.wheel_wrap_item').eq(index).children('.gray_wrap').children('.price').html(randomPrice + ' USD');
         } else {
 

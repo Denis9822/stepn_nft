@@ -1668,6 +1668,12 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+    .lvl {
+        margin-top: 19px;
+    }
+    .lvl span {
+        line-height: initial;
+    }
     .full_bg {
         background-size: auto;
     }

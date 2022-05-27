@@ -8,8 +8,8 @@ var winItemPrice = 0;
 var winItemLvl = 0;
 var winItemType = 0;
 var dur = 14000;
-//random items
 
+//random items
 function shuffle(array) {
     for (
         // инициализация цикла
@@ -33,7 +33,6 @@ function getRandom(min, max) {
     return arr;
 }
 var a = getRandom(0, 73);
-// console.log(a);
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -96,9 +95,7 @@ if ($(window).width() > 768)
 else
     pos = $('.wheel_wrap_item').eq(winItemLength).offset().left - $(window).width() / 3.5;
 
-console.log(pos);
 
-console.log($(window).width());
 //animate wheel
 $('.wheel_start').click(function() {
     $('.popup_mask').hide();

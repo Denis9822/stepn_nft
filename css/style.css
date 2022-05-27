@@ -180,9 +180,6 @@ img {
 
 .container {
     min-height: 100vh;
-    /* background-image: url('../img/stars.png');
-    background-repeat: no-repeat;
-    background-position: center; */
 }
 
 body {
@@ -767,6 +764,7 @@ header {
     background: #FF76E7;
     border: 2px solid #000000;
     border-radius: 300px;
+    align-items: center;
 }
 
 .header_right_wallet img {
@@ -870,6 +868,9 @@ header {
     border: 1px solid #000000;
     font-weight: 400;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn_wheel p {
@@ -1511,6 +1512,8 @@ header {
     box-sizing: border-box;
     line-height: 18px;
     padding-left: 7px;
+    display: flex;
+    align-items: center;
 }
 
 .wheel_wrap_item_code .gray_wrap .price {

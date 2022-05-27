@@ -1584,7 +1584,8 @@ header {
 
 .gray_wrap .gift {
     width: 156px;
-    height: 26px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-top: 12px;
     background: #65FDCA;
     border: 2px solid #262626;
@@ -1602,13 +1603,6 @@ header {
     color: #262626;
     -webkit-box-shadow: 5px 5px 0px 0px #000000;
     box-shadow: 5px 5px 0px 0px #000000;
-}
-
-@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
-    .gray_wrap .gift {
-        height: 23px !important;
-        padding-top: 3px !important;
-    }
 }
 
 .win_blue {

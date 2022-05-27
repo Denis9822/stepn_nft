@@ -1606,8 +1606,8 @@ header {
 
 @supports (overflow:-webkit-marquee) and (justify-content:inherit) {
     .gray_wrap .gift {
-        height: 23px;
-        padding-top: 3px;
+        height: 23px !important;
+        padding-top: 3px !important;
     }
 }
 

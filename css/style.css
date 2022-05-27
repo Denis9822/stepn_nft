@@ -1604,6 +1604,13 @@ header {
     box-shadow: 5px 5px 0px 0px #000000;
 }
 
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+    .gray_wrap .gift {
+        height: 23px;
+        padding-top: 3px;
+    }
+}
+
 .win_blue {
     background-color: #49A8D7;
 }

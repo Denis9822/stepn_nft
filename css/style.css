@@ -722,6 +722,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: -webkit-center;
 }
 
 .header_logo img {
@@ -744,6 +745,7 @@ header {
     display: flex;
     justify-content: right;
     align-items: center;
+    text-align: -webkit-center;
     margin-left: auto;
 }
 
@@ -765,6 +767,7 @@ header {
     border: 2px solid #000000;
     border-radius: 300px;
     align-items: center;
+    text-align: -webkit-center;
 }
 
 .header_right_wallet img {
@@ -791,6 +794,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: -webkit-center;
     cursor: pointer;
     position: relative;
     z-index: 10;
@@ -870,6 +874,7 @@ header {
     cursor: pointer;
     display: flex;
     align-items: center;
+    text-align: -webkit-center;
     justify-content: center;
 }
 
@@ -932,6 +937,7 @@ header {
     display: grid;
     text-align: center;
     align-items: center;
+    text-align: -webkit-center;
     justify-content: center;
     margin-right: 25px;
 }
@@ -955,12 +961,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: -webkit-center;
 }
 
 .btn_wheel--style-2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: -webkit-center;
     margin-right: 21px;
     width: 234px;
     height: 53px;
@@ -1072,6 +1080,7 @@ header {
     line-height: 2px;
     display: flex;
     align-items: center;
+    text-align: -webkit-center;
     justify-content: center;
     text-align: center;
     letter-spacing: -0.04em;
@@ -1140,6 +1149,7 @@ header {
 .popup_header {
     display: flex;
     align-items: center;
+    text-align: -webkit-center;
     justify-content: space-between;
 }
 
@@ -1214,6 +1224,7 @@ header {
     margin-top: 20px;
     display: flex;
     align-items: center;
+    text-align: -webkit-center;
 }
 
 .wallet_more img {
@@ -1351,6 +1362,7 @@ header {
     top: 16px;
     display: flex;
     align-items: center;
+    text-align: -webkit-center;
     font-weight: bold;
     box-shadow: inset 0px 0px 30px 10px lightcoral;
     padding: 4px;
@@ -1514,6 +1526,7 @@ header {
     padding-left: 7px;
     display: flex;
     align-items: center;
+    text-align: -webkit-center;
 }
 
 .wheel_wrap_item_code .gray_wrap .price {
@@ -1555,6 +1568,7 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
+    text-align: -webkit-center;
     display: flex;
     font-weight: 500;
     font-size: 16px;
@@ -1677,6 +1691,7 @@ header {
         margin-top: 19px;
         display: flex;
         align-items: center;
+        text-align: -webkit-center;
     }
     .wheel_wrap_item_code .lvl span {
         line-height: initial;

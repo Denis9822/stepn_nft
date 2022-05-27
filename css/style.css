@@ -892,7 +892,6 @@ header {
     line-height: 130%;
     /* identical to box height, or 21px */
     color: #000000;
-    line-height: 52px;
 }
 
 .btn_wallet--style-2 p {
@@ -902,7 +901,6 @@ header {
     line-height: 130%;
     /* identical to box height, or 21px */
     color: #000000;
-    line-height: 52px;
     display: flex;
     display: -webkit-flex;
     align-items: center;
@@ -1508,6 +1506,9 @@ header {
     justify-content: center;
     color: white;
     line-height: 26px;
+    align-items: flex-start;
+    display: -webkit-flex;
+    -webkit-align-items: flex-start;
 }
 
 .wheel_wrap_item_code .win_item_img img {
@@ -1597,7 +1598,6 @@ header {
     display: -webkit-flex;
     font-weight: 500;
     font-size: 16px;
-    line-height: 130%;
     /* identical to box height, or 21px */
     color: #262626;
     -webkit-box-shadow: 5px 5px 0px 0px #000000;

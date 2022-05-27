@@ -192,6 +192,8 @@ body {
 
 .pyro {
     display: none;
+    z-index: 11111111111;
+    position: relative;
 }
 
 .pyro>.before,

@@ -713,6 +713,7 @@ body {
 
 header {
     display: flex;
+    display: -webkit-flex;
     padding-top: 28px;
     padding-left: 70px;
     padding-right: 70px;
@@ -720,9 +721,10 @@ header {
 
 .header_logo {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
 }
 
 .header_logo img {
@@ -743,9 +745,10 @@ header {
 
 .header_right {
     display: flex;
+    display: -webkit-flex;
     justify-content: right;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
     margin-left: auto;
 }
 
@@ -759,6 +762,7 @@ header {
     width: 294px;
     height: 53px;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     cursor: pointer;
     position: relative;
@@ -767,7 +771,7 @@ header {
     border: 2px solid #000000;
     border-radius: 300px;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
 }
 
 .header_right_wallet img {
@@ -792,9 +796,10 @@ header {
     background: #2FBB99;
     border-radius: 8px;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
     cursor: pointer;
     position: relative;
     z-index: 10;
@@ -873,9 +878,11 @@ header {
     font-weight: 400;
     cursor: pointer;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
     justify-content: center;
+    align-items: -webkit-center;
 }
 
 .btn_wheel p {
@@ -896,6 +903,10 @@ header {
     /* identical to box height, or 21px */
     color: #000000;
     line-height: 52px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
 }
 
 .wheel {
@@ -927,6 +938,7 @@ header {
 .partners_items {
     margin-top: 32px;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
 }
 
@@ -937,7 +949,7 @@ header {
     display: grid;
     text-align: center;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
     justify-content: center;
     margin-right: 25px;
 }
@@ -959,16 +971,18 @@ header {
 .price_btns {
     margin-top: 32px;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
 }
 
 .btn_wheel--style-2 {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
     margin-right: 21px;
     width: 234px;
     height: 53px;
@@ -1079,8 +1093,9 @@ header {
     font-size: 1.99601px;
     line-height: 2px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
     justify-content: center;
     text-align: center;
     letter-spacing: -0.04em;
@@ -1148,8 +1163,9 @@ header {
 
 .popup_header {
     display: flex;
+    display: -webkit-flex;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
     justify-content: space-between;
 }
 
@@ -1186,6 +1202,7 @@ header {
 
 .wallet_items {
     display: flex;
+    display: -webkit-flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -1196,6 +1213,7 @@ header {
     background: #E9E9E9;
     border-radius: 8px;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -1223,8 +1241,9 @@ header {
 .wallet_more {
     margin-top: 20px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
 }
 
 .wallet_more img {
@@ -1312,6 +1331,7 @@ header {
     font-size: 22px;
     font-weight: bold;
     display: flex;
+    display: -webkit-flex;
     margin-top: 20px;
     text-align: center;
 }
@@ -1320,6 +1340,7 @@ header {
     margin: 0 auto;
     margin-top: 45px;
     display: flex;
+    display: -webkit-flex;
     position: relative;
     justify-content: center;
     flex-direction: column;
@@ -1361,8 +1382,9 @@ header {
     font-size: 22px;
     top: 16px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
     font-weight: bold;
     box-shadow: inset 0px 0px 30px 10px lightcoral;
     padding: 4px;
@@ -1403,13 +1425,13 @@ header {
     line-height: 7px;
     /* identical to box height */
     display: flex;
+    display: -webkit-flex;
     align-items: flex-end;
     text-align: center;
     letter-spacing: -0.04em;
     color: #969697;
     margin-top: 15px;
     margin-bottom: 10px;
-    display: flex;
     justify-content: center;
     padding-bottom: 15px;
 }
@@ -1417,6 +1439,7 @@ header {
 .win_btns {
     margin-top: 32px;
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
 }
 
@@ -1478,10 +1501,10 @@ header {
     width: 70%;
     height: 30px;
     display: flex;
+    display: -webkit-flex;
     margin: 0 auto;
     border-radius: 0 0 10px 10px;
     text-align: center;
-    display: flex;
     justify-content: center;
     color: white;
     line-height: 26px;
@@ -1525,8 +1548,9 @@ header {
     line-height: 18px;
     padding-left: 7px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
 }
 
 .wheel_wrap_item_code .gray_wrap .price {
@@ -1568,8 +1592,9 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
-    text-align: -webkit-center;
+    -webkit-align-items: center;
     display: flex;
+    display: -webkit-flex;
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;
@@ -1690,8 +1715,9 @@ header {
     .wheel_wrap_item_code .lvl {
         margin-top: 19px;
         display: flex;
+        display: -webkit-flex;
         align-items: center;
-        text-align: -webkit-center;
+        -webkit-align-items: center;
     }
     .wheel_wrap_item_code .lvl span {
         line-height: initial;
